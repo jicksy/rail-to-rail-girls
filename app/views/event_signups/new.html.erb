@@ -1,0 +1,11 @@
+<h1>Event Signups</h1>
+<%= form_for(@event_signup) do |f| %>
+  
+  <div class="field">
+    <%= f.label :offering_ride %><br>
+    <%= f.check_box :offering_ride %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

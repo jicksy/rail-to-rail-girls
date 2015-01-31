@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'event_signups/new'
+
+  post 'event_signups' => 'event_signups#create'
+
   resources :users
 
   # get 'users/new' => 'users#new'

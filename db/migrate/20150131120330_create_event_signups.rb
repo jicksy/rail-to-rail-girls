@@ -7,5 +7,8 @@ class CreateEventSignups < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_foreign_key :event_signups, :events
+    add_foreign_key :event_signups, :users
   end
 end
