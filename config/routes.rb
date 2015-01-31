@@ -15,6 +15,10 @@ Rails.application.routes.draw do
 
   get 'event/index'
 
+  get 'event_signups/new'
+
+  post 'event_signups' => 'event_signups#create'
+
   resources :users
   resources :events
 
