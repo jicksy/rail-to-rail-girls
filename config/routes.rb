@@ -1,5 +1,24 @@
 Rails.application.routes.draw do
+  get 'events/new'
+
+  get 'events/edit'
+
+  get 'events/show'
+
+  get 'events/index'
+
+  get 'event/new'
+
+  get 'event/edit'
+
+  get 'event/show'
+
+  get 'event/index'
+
   resources :users
+  resources :events
+
+
 
   # get 'users/new' => 'users#new'
 
